@@ -10,13 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="53dp"
             app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:title="Login UI-MAD Practical"
-            />
+            android:background="@color/black"
+            app:titleTextColor="@color/white"
+            app:title="Login UI-MAD Practical" />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="180sp"
@@ -28,19 +30,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".LoginActivity">
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/mainbox"
                 android:layout_width="match_parent"
                 android:layout_height="290sp"
                 android:layout_marginHorizontal="23sp"
                 android:layout_marginVertical="15sp"
-                app:cardBackgroundColor="#E6D3FB"
+                app:cardBackgroundColor="@color/purple_500"
                 app:cardCornerRadius="20sp"
                 app:cardElevation="7sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:strokeColor="@color/black"
                 tools:ignore="MissingConstraints"
-                >
+                tools:layout_editor_absoluteX="23dp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/email"
@@ -52,8 +55,7 @@
                     app:boxStrokeColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="parent"
-                    >
+                    app:layout_constraintTop_toBottomOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -62,7 +64,7 @@
                         android:drawableTint="#EC53A4"
                         android:hint="Email"
                         android:inputType="textEmailAddress"
-                        android:textColorHint="#A822BF" />
+                        android:textColorHint="#040304" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -75,8 +77,7 @@
                     app:boxStrokeColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/email"
-                    >
+                    app:layout_constraintTop_toBottomOf="@id/email">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -85,7 +86,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="Password"
                         android:inputType="textEmailAddress"
-                        />
+                        android:textColorHint="#040304" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -114,16 +115,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginBottom="-15sp"
                 >
+
                 <Button
                     android:id="@+id/bt"
                     android:layout_width="150sp"
                     android:layout_height="50sp"
-                    android:backgroundTint="#6200ee"
+                    android:backgroundTint="#F44336"
                     android:text="Login"
                     android:textSize="18sp"
                     app:cornerRadius="40sp"
-                    tools:ignore="MissingConstraints,NotSibling"
-                    />
+                    tools:ignore="MissingConstraints,NotSibling" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.AppBarLayout>

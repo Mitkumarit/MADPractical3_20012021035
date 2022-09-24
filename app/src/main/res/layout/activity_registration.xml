@@ -16,6 +16,8 @@
             android:layout_width="match_parent"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:titleTextColor="@color/white"
             app:title="Registration UI-MAD Practical"/>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
@@ -36,17 +38,17 @@
                 android:layout_marginBottom="-45sp"
                 android:src="@drawable/guni_pink_logo"
                 />
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="523sp"
                 android:layout_marginHorizontal="23sp"
                 android:layout_marginVertical="15sp"
-                android:backgroundTint="#E6D3FB"
+                android:backgroundTint="@color/purple_500"
                 app:cardCornerRadius="20sp"
                 app:cardElevation="7sp"
                 app:strokeColor="@color/black"
-                tools:ignore="MissingConstraints"
-                >
+                tools:ignore="MissingConstraints">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/username"
@@ -65,7 +67,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="User Full Name"
                         android:inputType="text"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,6 +80,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginVertical="105sp"
                     app:boxStrokeColor="@color/black">
+
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="66dp"
@@ -86,7 +89,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="Phone Number"
                         android:inputType="number"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,7 +110,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="City"
                         android:inputType="text"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,7 +131,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="Email"
                         android:inputType="textEmailAddress"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="#070507" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,7 +151,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="Password"
                         android:inputType="textPassword"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="#040304" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -168,7 +171,7 @@
                         android:drawableTint="#DA3D90"
                         android:hint="Confirm Password"
                         android:inputType="textEmailAddress"
-                        android:textColorHint="#9C27B0" />
+                        android:textColorHint="#050406" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -181,16 +184,17 @@
                 android:layout_marginTop="-45sp"
                 android:layout_marginBottom="80sp"
                 >
+
                 <Button
                     android:id="@+id/b"
                     android:layout_width="135sp"
                     android:layout_height="50sp"
-                    android:backgroundTint="#6200ee"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#F44336"
+                    android:elevation="10sp"
                     android:text="Register"
                     android:textSize="19sp"
-                    android:elevation="10sp"
                     app:cornerRadius="40sp"
-                    android:layout_gravity="center_horizontal"
                     tools:ignore="MissingConstraints,NotSibling" />
                 <TextView
                     android:id="@+id/tss"
